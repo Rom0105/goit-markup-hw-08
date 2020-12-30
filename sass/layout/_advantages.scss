@@ -1,0 +1,42 @@
+.text {
+    padding-top: 94px;
+  }
+  
+  .text-list {
+    display: flex;
+  }
+
+  .text-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .icon-spraite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 4px;
+  
+    background-color: var(--grey3);
+  }
+  
+  .text-title {
+    margin-top: 30px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .text-subtitle {
+    width: 270px;
+    margin-top: 10px;
+  
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
