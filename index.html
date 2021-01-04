@@ -21,6 +21,14 @@
 				<a href="./index.html" class="logo">
 					Web<span class="span-logo">Studio</span>
 				</a>
+				<button type="button" class="menu-button" is-open aria-expanded="false" aria-controls="menu-container">
+					<svg class="icon-list" width="24" height="16" aria-label="Переключатель мобильного меню">
+						<use class="icon-close" href="./svgsprite/spaite.svg#icon-close">
+						</use>
+						<use class="icon-menu" href="./svgsprite/spaite.svg#icon-menu">
+						</use>
+					</svg>
+				</button>
 
 				<ul class="site-nav">
 					<li class="link-nav link-after">
@@ -80,9 +88,11 @@
 							</svg>
 						</div>
 						<h3 class="text-title">Внимание к деталям</h3>
-						<p class="text-subtitle">Идейные соображения, а также начало повседневной работы по формированию
+						<p class="text-subtitle">Идейные соображения, а также начало повседневной работы по
+							формированию
 							позиции.
 						</p>
+
 					</li>
 					<li class="text-item">
 						<div class="icon-spraite">
@@ -447,13 +457,15 @@
 				<p class="footer-text">Подпишитесь на рассылку</p>
 				<form class="form">
 					<input type="email" name="mail" placeholder="E-mail">
-					<button type="submit" class="form-button">
-						Подписаться
-						<svg class="button-icon" width="24" height="24">
-							<use href="./svgsprite/spaite.svg#icon-iconsend">
-							</use>
-						</svg>
-					</button>
+					<div class="content-button">
+						<button type="submit" class="form-button">
+							Подписаться
+							<svg class="button-icon" width="24" height="24">
+								<use href="./svgsprite/spaite.svg#icon-iconsend">
+								</use>
+							</svg>
+						</button>
+					</div>
 				</form>
 			</div>
 		</div>

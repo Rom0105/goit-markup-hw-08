@@ -1,16 +1,33 @@
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
+  .team-title {
+    margin-bottom: 30px;
+  }
+
   .client-list {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin: -7.5px;
   }
 
   .client-item {
-    &:not(:last-child) {
-      margin-right: 30px;
+    /* flex-basis: 50%; */
+    
+
+    @media screen and (max-width: 767px) {
+      /* &:nth-child(2n + 1) {
+        margin-right: 30px;
+      } */
+      
+    width: calc((100% - 3 * 10px) / 2);
+    margin: 7.5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 33.3333%;
     }
   }
   
@@ -18,14 +35,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    /* width: 210px; */
     height: 90px;
-  
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: var(--grey4);
   
     transition: border-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
     &:hover,
     &:focus {
