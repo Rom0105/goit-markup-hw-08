@@ -21,7 +21,8 @@
 				<a href="./index.html" class="logo">
 					Web<span class="span-logo">Studio</span>
 				</a>
-				<button type="button" class="menu-button" is-open aria-expanded="false" aria-controls="menu-container">
+				<button type="button" class="menu-button" data-menu-button aria-expanded="false"
+					aria-controls="menu-list">
 					<svg class="icon-list" width="24" height="16" aria-label="Переключатель мобильного меню">
 						<use class="icon-close" href="./svgsprite/spaite.svg#icon-close">
 						</use>
@@ -41,6 +42,8 @@
 						<a href="#" class="link">Контакты</a>
 					</li>
 				</ul>
+
+				<div class="menu-list" id="menu-list" data-menu>Rjynt</div>
 			</nav>
 			<ul class="auth-nav">
 				<li class="nav-link"><a href="mailto:info@devstudio.com" class="link">
@@ -50,7 +53,7 @@
 						</svg>
 						info@devstudio.com</a>
 				</li>
-				<li><a href="tel:+380961111111" class="link">
+				<li><a href="tel:+380961111111" class="link link-media">
 						<svg class="nav-svg" width="10" height="16">
 							<use href="./svgsprite/spaite.svg#icon-smartphone">
 							</use>
@@ -339,7 +342,7 @@
 
 		<!-- Клиенты -->
 		<section class="client">
-			<div class="container">
+			<div class="container-media">
 				<h2 class="team-title">Постоянные клиенты</h2>
 				<ul class="client-list">
 					<li class="client-item">
@@ -531,6 +534,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="./js/menu.js"></script>
 	<script src="./js/modal.js"></script>
 </body>
 

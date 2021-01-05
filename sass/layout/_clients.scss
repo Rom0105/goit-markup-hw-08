@@ -1,6 +1,15 @@
 .client {
     padding-top: 60px;
     padding-bottom: 60px;
+
+  }
+  
+  .container-media {
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
   }
   
   .team-title {
@@ -10,7 +19,6 @@
   .client-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -7.5px;
   }
 
   .client-item {
@@ -22,8 +30,8 @@
         margin-right: 30px;
       } */
       
-    width: calc((100% - 3 * 10px) / 2);
-    margin: 7.5px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {

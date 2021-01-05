@@ -3,13 +3,27 @@
     padding-bottom: 60px;
   }
   
-  /* .text-list {
-    display: flex;
-  } */
+  .text-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
 
   .text-item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
     &:not(:first-child) {
-      margin-top: 30px;
+      @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+      }
+     
     }
     
   }
