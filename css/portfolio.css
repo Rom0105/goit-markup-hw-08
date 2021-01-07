@@ -355,13 +355,21 @@ img {
 }
 
 .container-footer {
-  /* display: flex; */
+  /* /* display: flex; */
   /* align-items: baseline; */
 }
 
 .footer-items {
   /* margin-right: 70px; */
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .footer-span {
@@ -442,9 +450,17 @@ img {
   margin-right: 10px;
 }
 
-.form {
-  /* display: flex;
-    align-items: center; */
+@media screen and (max-width: 1199px) {
+  .footer-center {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form input {

@@ -1,6 +1,10 @@
 .text {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 90px;
+    }
   }
   
   .text-list {
@@ -9,23 +13,30 @@
       flex-wrap: wrap;
       padding-left: 0;
       padding-right: 0;
-      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
   .text-item {
-    @media screen and (min-width: 768px) {
+    &:not(:first-child) {
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
-
     &:not(:first-child) {
       @media screen and (min-width: 1200px) {
-        margin-top: 30px;
+        margin-left: 30px;
       }
-     
     }
-    
   }
   
   .icon-spraite {
@@ -41,6 +52,10 @@
   .text-title {
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
     margin-top: 30px;
   
     font-weight: 700;
@@ -49,9 +64,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  
+
   .text-subtitle {
-    /* width: 270px; */
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
     margin-top: 10px;
   
     font-size: 14px;
