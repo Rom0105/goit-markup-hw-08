@@ -1,12 +1,32 @@
  .section {
-	 padding-top: 94px;
-	 padding-bottom: 94px;
+	 padding-top: 45px;
+	 padding-bottom: 60px;
+
+	 @media screen and (min-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 45px;
+	  }
+
+	 @media screen and (min-width: 1200px) {
+		padding-top: 94px;
+	 	padding-bottom: 94px;
+	  }
  }
 
  .section-item {
 	 display: flex;
-	 justify-content: center;
-	 margin-bottom: 50px;
+	 flex-wrap: wrap;
+	 margin-bottom: 40px;
+
+	 @media screen and (min-width: 768px) {
+		justify-content: center;
+		flex-wrap: nowrap;
+		margin-bottom: 30px;
+	  }
+
+	  @media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	  }
 
 	 & .link {
 		padding: 6px 22px;
@@ -40,5 +60,11 @@
 	&:not(:last-child) {
 		margin-right: 8px;
 	}
+
+	margin-top: 15px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
+	  }
  }
  

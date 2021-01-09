@@ -15,12 +15,21 @@
 <body>
 
 	<!-- Шапка -->
-	<header class="header container ">
-		<div class="header-items">
+	<header class="header">
+		<div class="header-items container">
 			<nav class="header-nav">
 				<a href="./index.html" class="logo">
 					Web<span class="span-logo">Studio</span>
 				</a>
+				<button type="button" class="menu-button" data-menu-button aria-expanded="false"
+					aria-controls="menu-list">
+					<svg class="icon-list" width="24" height="16" aria-label="Переключатель мобильного меню">
+						<use class="icon-close" href="./svgsprite/spaite.svg#icon-close">
+						</use>
+						<use class="icon-menu" href="./svgsprite/spaite.svg#icon-menu">
+						</use>
+					</svg>
+				</button>
 
 				<ul class="site-nav">
 					<li class="link-nav">
@@ -33,6 +42,8 @@
 						<a href="#" class="link">Контакты</a>
 					</li>
 				</ul>
+
+				<div class="menu-list" id="menu-list" data-menu>Rjynt</div>
 			</nav>
 			<ul class="auth-nav">
 				<li class="nav-link"><a href="mailto:info@devstudio.com" class="link">
@@ -42,7 +53,7 @@
 						</svg>
 						info@devstudio.com</a>
 				</li>
-				<li><a href="tel:+380961111111" class="link">
+				<li><a href="tel:+380961111111" class="link link-media">
 						<svg class="nav-svg" width="10" height="16">
 							<use href="./svgsprite/spaite.svg#icon-smartphone">
 							</use>
@@ -53,11 +64,11 @@
 		</div>
 	</header>
 
-	<main class="container">
+	<main>
 		<!-- Навигация -->
 		<h1 class="visually-hidden">Портфолио</h1>
 		<section class="section">
-			<ul class="section-item">
+			<ul class="section-item container">
 				<li class="section-list">
 					<button type="button" class="link">Все</button>
 				</li>
@@ -67,17 +78,17 @@
 				<li class="section-list">
 					<button type="button" class="link">Приложения</button>
 				</li>
-				<li class="section-list">
+				<li class="section-list section-margin">
 					<button type="button" class="link">Дизайн</button>
 				</li>
-				<li class="section-list">
+				<li class="section-list section-margin">
 					<button type="button" class="link">Маркетинг</button>
 				</li>
 			</ul>
 
 
 			<!-- Список карточек -->
-			<ul class="card-list">
+			<ul class="card-list container-card">
 				<li class="card-item">
 					<a class="card-link" href="#">
 						<div class="card-thumb">
@@ -211,76 +222,81 @@
 	<!-- футер -->
 	<footer class="footer">
 		<div class="container container-footer">
-			<div class="footer-items">
-				<a href="./index.html" class="logo">
-					Web<span class="footer-span">Studio</span>
-				</a>
-				<address class="address">
-					<ul>
-						<li><a href="https://goo.gl/maps/FrXTjoq9erfXvm6j9" target="_blank" rel="noreferrer noopener"
-								class="link">г. Киев, пр-т
-								Леси Украинки, 26</a></li>
-						<li class="address-list">
-							<a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+			<div class="footer-flex">
+				<div class="footer-items">
+					<a href="./index.html" class="logo">
+						Web<span class="footer-span">Studio</span>
+					</a>
+					<address class="address">
+						<ul>
+							<li><a href="https://goo.gl/maps/FrXTjoq9erfXvm6j9" target="_blank"
+									rel="noreferrer noopener" class="link">г. Киев, пр-т
+									Леси Украинки, 26</a></li>
+							<li class="address-list">
+								<a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+							</li>
+							<li class="address-list">
+								<a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="footer-item">
+					<p class="footer-text">присоединяйтесь</p>
+					<ul class="footer-list">
+						<li class="footer-li">
+							<a class="footer-icon footer-insta" href="">
+								<svg width="20" height="20">
+									<use href="./svgsprite/spaite.svg#icon-instagramwhite">
+									</use>
+								</svg>
+							</a>
 						</li>
-						<li class="address-list">
-							<a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
+						<li class="footer-li">
+							<a class="footer-icon footer-vector" href="">
+								<svg width="20" height="20">
+									<use href="./svgsprite/spaite.svg#icon-twitterwhite">
+									</use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a class="footer-icon footer-facebook" href="">
+								<svg width="20" height="20">
+									<use href="./svgsprite/spaite.svg#icon-facebookwhite">
+									</use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a class="footer-icon footer-linke" href="">
+								<svg width="20" height="20">
+									<use href="./svgsprite/spaite.svg#icon-linkedinwhite">
+									</use>
+								</svg>
+							</a>
 						</li>
 					</ul>
-				</address>
+				</div>
 			</div>
-			<div class="footer-item">
-				<p class="footer-text">присоединяйтесь</p>
-				<ul class="footer-list">
-					<li class="footer-li">
-						<a class="footer-icon footer-insta" href="">
-							<svg width="20" height="20">
-								<use href="./svgsprite/spaite.svg#icon-instagramwhite">
-								</use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-li">
-						<a class="footer-icon footer-vector" href="">
-							<svg width="20" height="20">
-								<use href="./svgsprite/spaite.svg#icon-twitterwhite">
-								</use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-li">
-						<a class="footer-icon footer-facebook" href="">
-							<svg width="20" height="20">
-								<use href="./svgsprite/spaite.svg#icon-facebookwhite">
-								</use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer-li">
-						<a class="footer-icon footer-linke" href="">
-							<svg width="20" height="20">
-								<use href="./svgsprite/spaite.svg#icon-linkedinwhite">
-								</use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div>
+			<div class="footer-center">
 				<p class="footer-text">Подпишитесь на рассылку</p>
 				<form class="form">
 					<input type="email" name="mail" placeholder="E-mail">
-					<button type="submit" class="form-button">
-						Подписаться
-						<svg class="button-icon" width="24" height="24">
-							<use href="./svgsprite/spaite.svg#icon-iconsend">
-							</use>
-						</svg>
-					</button>
+					<div class="content-button">
+						<button type="submit" class="form-button">
+							Подписаться
+							<svg class="button-icon" width="24" height="24">
+								<use href="./svgsprite/spaite.svg#icon-iconsend">
+								</use>
+							</svg>
+						</button>
+					</div>
 				</form>
 			</div>
 		</div>
 	</footer>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

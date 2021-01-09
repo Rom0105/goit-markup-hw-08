@@ -10,13 +10,18 @@
   }
   
   .container-footer {
-    /* /* display: flex; */
-    /* align-items: baseline; */
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   
   .footer-items {
-    /* margin-right: 70px; */
     text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      text-align: left;
+    }
   }
   
   .footer-flex {
@@ -33,7 +38,10 @@
   
   .address {
     margin-top: 20px;
-    /* width: 231px; */
+
+    @media screen and (min-width: 1200px) {
+      width: 231px;
+    }
 
     & .link {
       font-style: normal;
@@ -47,6 +55,10 @@
   
   .address-list {
     margin-top: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 10px;
+    }
   }
   
   .footer-link {
@@ -59,8 +71,11 @@
   }
   
   .footer-item {
-    /* margin-right: 93px; */
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
   
   .footer-text {
@@ -77,6 +92,10 @@
     text-transform: uppercase;
   
     color: var(--white);
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   
   .footer-list {
@@ -116,9 +135,7 @@
   }
   
   .footer-center {
-    @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
+    text-align: center;
   }
   
 
@@ -129,11 +146,11 @@
     }
 
     & input {
-      @media screen and (max-width: 479px) {
-        width: 100%;
+      width: 100%;
+      @media screen and (min-width: 480px) {
+        width: 450px;
       }
 
-      width: 450px;
       padding: 15px 16px;
       
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -148,7 +165,6 @@
     align-items: center;
     
     margin-top: 20px;
-    /* margin-left: 12px; */
     padding: 10px 28px 10px 29px;
     border-radius: 4px;
     
@@ -159,6 +175,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--cyan);
     color: var(--white);
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+      margin-top: 0;
+    }
   }
   
   .button-icon {
