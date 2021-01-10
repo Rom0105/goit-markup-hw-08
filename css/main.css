@@ -638,12 +638,29 @@ img {
   }
 }
 
-.team-title {
+.team-subtitle {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .team-subtitle {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-subtitle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team-comand {
@@ -763,11 +780,21 @@ img {
 
 .team-title {
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 1200px) {
   .team-title {
     margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
