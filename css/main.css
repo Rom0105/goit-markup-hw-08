@@ -103,7 +103,7 @@ h3 {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1014,6 +1014,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form input {
+    width: 358px;
+  }
+}
+
 .form-button {
   display: flex;
   align-items: center;
@@ -1061,7 +1067,6 @@ img {
 }
 
 .modal {
-  /* width: 450px; */
   height: 609px;
   padding: 40px;
   position: absolute;

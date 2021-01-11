@@ -712,6 +712,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form input {
+    width: 358px;
+  }
+}
+
 .form-button {
   display: flex;
   align-items: center;
