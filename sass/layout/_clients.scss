@@ -8,31 +8,8 @@
     }
   }
   
-  .container-client {
-    @media screen and (min-width: 480px) {
-      width: 480px;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0 auto;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0 auto;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-  }
-  
   .team-title {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 28px;
@@ -52,6 +29,10 @@
   }
 
   .client-list {
+    @media screen and (max-width: 1199px) {
+      margin: -15px;
+    }
+    
     display: flex;
     flex-wrap: wrap;
 

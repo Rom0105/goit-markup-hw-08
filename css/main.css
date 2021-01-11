@@ -484,15 +484,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .text-list {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .text-list {
+    margin: 0;
     flex-wrap: nowrap;
   }
 }
@@ -625,8 +625,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team-item {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -634,7 +635,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team-item {
-    display: flex;
+    margin: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -645,12 +647,6 @@ img {
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 768px) {
-  .team-subtitle {
-    margin-bottom: 15px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -751,35 +747,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .container-client {
-    width: 480px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container-client {
-    width: 768px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container-client {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-}
-
 .team-title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.166;
@@ -801,6 +770,12 @@ img {
 .client-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
+  .client-list {
+    margin: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
