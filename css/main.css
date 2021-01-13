@@ -668,8 +668,6 @@ img {
 }
 
 .team {
-  max-width: 1600px;
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--grey3);
